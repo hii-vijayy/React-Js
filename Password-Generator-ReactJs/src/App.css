@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main{
+  margin:30px auto;
+  width: 700px;
+  background-color: grey;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.box{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  gap: 10px;
+}
+
+#pass{
+  width:100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}
+
+#copy{
+  width: 100px;
+  border-radius:10px;
+  border: none;
+  background-color: rgb(31, 216, 117);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#prop{
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 10px 0;
+}
+
+input[type="range"]{
+  cursor: pointer;
+}
+
+input[type="checkbox"]{
+  margin-left:80px;
+  cursor: pointer;
+}
+
+label{
+  font-size: 20px;
+}

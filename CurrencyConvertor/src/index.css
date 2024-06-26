@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#main {
+  padding: 20px;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between; 
+  font-weight: 600; 
+}
+
+#convert {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  border-radius: 5px;
+  border: none; 
+  background-color: white;
+  padding: 5px;
+  font-size: 16px; 
+}
+
+select {
+  border-radius: 5px;
+  border: none; 
+  background-color: white;
+  padding: 5px;
+  font-size: 16px;
+}

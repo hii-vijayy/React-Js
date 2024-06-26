@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding:10px 20px; 
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+button {
+  margin: 10px; 
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  box-shadow: 2px 1px 2px black;
+}
+
+#red{
+  background-color: red;
+}
+#green{
+  background-color:green;
+}
+#blue{
+  background-color: blue;
+}
+#olive{
+  background-color: olive;
+}
+#grey{
+  background-color: grey;
+}
+#yellow{
+  background-color:rgb(241, 241, 74);
+}
+#pink{
+  background-color: pink;
+}
+#purple{
+  background-color: purple;
+}
+#violet{
+  background-color:violet;
+}
+#white{
+  background-color: rgba(240, 231, 231, 0.688);
+}
+#black{
+  background-color: black;
+}
+
