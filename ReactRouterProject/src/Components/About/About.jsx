@@ -7,7 +7,7 @@ function About() {
         <div className="container">
             <div className="aboutMain">
                 <div className="aboutImg">
-                    <Link><img src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png" alt="image"/></Link>
+                    <Link><img src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png" alt="image"/></Link> {/* this link tag is used in-place of 'a' tag and 'to' tag is used in place of 'href' tag this works same as 'a' tag but don't refresh tha webapage when links are visited */}
                 </div>
                 <div className="aboutBody">
                     <h2>React projects are developed by passionate developers</h2>

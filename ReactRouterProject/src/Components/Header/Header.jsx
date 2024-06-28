@@ -15,7 +15,9 @@ function Header() {
                 <div id="head">
                     <NavLink  to="/"
                     className={({ isActive }) => (isActive ? "active home" : "home")} style={({ isActive }) => ({ color: isActive ? 'rgb(244, 95, 41)' : 'rgb(65, 65, 65)' })}>Home
-                    </NavLink>
+                    </NavLink> {/* this is also same as link but with some advance functions in it
+                    
+                    example:-       isActive :- this is used to check if a page is opended or not if yes then what to do and if not then what to do*/}
                     <NavLink to="/about"
                     className={({ isActive }) => (isActive ? "active about" : "about")} style={({ isActive }) => ({ color: isActive ? 'rgb(244, 95, 41)' : 'rgb(65, 65, 65)' })}>About
                     </NavLink>

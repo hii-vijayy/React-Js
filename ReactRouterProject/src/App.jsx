@@ -6,6 +6,8 @@ import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Contact from './Components/Contact/Contact'
 
+
+// this below is the example of the od the routing process where the page is not refreshed again and again and links are visited
 function App() {
     return (    <>
           <Router>

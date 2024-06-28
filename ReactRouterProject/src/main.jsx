@@ -1,3 +1,5 @@
+// this below approch is used fro more advance routing methods and is more powerful but here it was not required and is also not working
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
