@@ -4,6 +4,8 @@ import '/Users/vijaykumar/Programming/React-Js/ReactRouterProject/src/App.css'
 
 function About() {
     return (
+        <>
+        <hr />
         <div className="container">
             <div className="aboutMain">
                 <div className="aboutImg">
@@ -17,6 +19,8 @@ function About() {
                 </div>
             </div>
         </div>
+        <hr />
+        </>
     );
 }
 

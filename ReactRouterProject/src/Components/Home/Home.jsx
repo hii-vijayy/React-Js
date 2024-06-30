@@ -4,6 +4,8 @@ import '/Users/vijaykumar/Programming/React-Js/ReactRouterProject/src/App.css'
 
 function Home() {
     return (
+        <>
+        <hr />
         <div className="container">
             <div className="homeMain">
                 <div id="cnt-1">
@@ -20,6 +22,8 @@ function Home() {
                 </div>
             </div>
         </div>
+        <hr />
+        </>
     );
 }
 

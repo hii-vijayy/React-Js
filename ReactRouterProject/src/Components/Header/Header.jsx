@@ -23,7 +23,9 @@ function Header() {
                     </NavLink>
                     <NavLink to="contact"
                     className={({ isActive }) => (isActive ? "active contact" : "contact")} style={({ isActive }) => ({ color: isActive ? 'rgb(244, 95, 41)' : 'rgb(65, 65, 65)' })}>Contact Us
-                    
+                    </NavLink>
+                    <NavLink to="github"
+                    className={({ isActive }) => (isActive ? "active github" : "github")} style={({ isActive }) => ({ color: isActive ? 'rgb(244, 95, 41)' : 'rgb(65, 65, 65)' })}>Github
                     </NavLink>
                 </div>
                 <div id="button">
@@ -32,7 +34,6 @@ function Header() {
                 </div>
             </div>
         </div>
-        <hr />
     </>
     );
 }

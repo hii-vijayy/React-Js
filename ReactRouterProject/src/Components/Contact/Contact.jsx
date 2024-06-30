@@ -4,6 +4,7 @@ import '/Users/vijaykumar/Programming/React-Js/ReactRouterProject/src/App.css'
 function Contact() {
     return (
         <>
+        <hr />
             <div className="container">
                 <div className="contactMain">
                     <div id="contactCnt-1">
@@ -25,6 +26,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            <hr />
         </>
     );
 }
