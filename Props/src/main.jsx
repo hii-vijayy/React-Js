@@ -8,7 +8,7 @@ ReactDOM.createRoot(document.getElementById('root')).render
 (
     <>
     <App />
-    <Card  button="Click Me"/> {/* this here is an exaple of the component with custom value chnaged according to user. This property is called Props */}
+    <Card  button="Click Me"/> {/* this here is an exaple of the component with custom value changed according to user. This property is called Props */}
     <Card  button="View More"/>  
     </>
 )
