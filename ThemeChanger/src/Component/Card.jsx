@@ -5,23 +5,27 @@ import { ThemeProvider } from '../Context/theme';
 
 function Card() {
 
+    // this is the used to change the or set the mode of the card
     const[themeMode , setThemeMode]= useState("light")
 
+    // this is used to set the theme to light modee
     const lightMode=()=>{
         setThemeMode('light')
     }
-
+    // this is used to set the theme to dark mode
     const darkMode=()=>{
         setThemeMode("dark")
     }
 
+
+    // this will remove any light or dark mode class already added in the code and will add the default class which is light mode and then changes the mode if the user selects any other mode
     useEffect(() => {
         document.body.classList.remove('light-mode', 'dark-mode');
         document.body.classList.add(`${themeMode}-mode`);
     }, [themeMode]);
     
     
-
+ // below is a card design that is used to demonatrate the light and dark mode switching 
     return (
         <ThemeProvider value={{themeMode, lightMode, darkMode}}>
             <div className="container">
