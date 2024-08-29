@@ -1,42 +1,203 @@
-#root {
-  max-width: 1280px;
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* Container for the form */
+.flex-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Styling for the input field */
+.input-field {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px 0 0 8px; /* Rounded corners on the left */
+  padding: 12px 12px;
+  outline: none;
+  transition: background-color 0.15s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white; /* Text color */
+  font-size: 16px;
+}
+
+/* Change background color on focus */
+.input-field:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Styling for the submit button */
+.submit-button {
+  border-radius: 0 8px 8px 0; /* Rounded corners on the right */
+  padding: 12px 12px;
+  background-color: #16a34a; /* Green background */
+  color: white; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Change background color on hover */
+.submit-button:hover {
+  background-color: #15803d; /* Darker green on hover */
+}
+
+/* Prevent the button from shrinking when the container is small */
+.submit-button.shrink-0 {
+  flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container for each Todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  gap: 12px;
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Background color for completed todos */
+.completed {
+  background-color: #c6e9a7; /* Light green */
+}
+
+/* Background color for non-completed todos */
+.not-completed {
+  background-color: #ccbed7; /* Light purple */
+}
+
+/* Checkbox styling */
+.todo-checkbox {
+  cursor: pointer;
+}
+
+/* Text input styling */
+.todo-text {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: border-color 0.2s ease-in-out;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Editable state for text input */
+.editable {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Strike-through styling for completed todos */
+.line-through {
+  text-decoration: line-through;
+}
+
+/* Button styling */
+.todo-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for buttons */
+.todo-button:hover {
+  background-color: #e5e5e5;
+}
+
+/* Disabled button styling */
+.todo-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container that covers the entire screen */
+.container {
+  background-color: #1b1b1d;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Wrapper for the content with max width */
+.todo-wrapper {
+  max-width: 850px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(104, 101, 101, 0.1);
+  border-radius: 8px;
+  padding: 16px 24px;
+  background-color: #313234;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+}
+
+/* Title styling */
+.title {
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
+  margin-bottom: 32px;
+  margin-top: 8px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Form container styling */
+.form-container {
+  margin-bottom: 16px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Styling for the todo items list  */
+ .todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
 }
