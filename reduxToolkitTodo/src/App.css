@@ -1,0 +1,115 @@
+body{
+  background-color: #111;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* styling for the todo form */
+.form{
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 20px 0;
+}
+
+.input{
+  background-color:#333;
+  width: 750px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  padding: 17px 5px;
+  transition: border-color 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+  font-size: 15px;
+}
+
+::placeholder{
+  color: white;
+  opacity: 0.5;
+}
+
+.input:focus{
+  border-color: rgb(59, 59, 63);
+  box-shadow: 0 0 5px rgb(50, 50, 55);
+}
+
+.button{
+  background-color: blue;
+  border: none;
+  width: 100px;
+  border-radius: 10px 0 10px 0;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10px 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover{
+  background-color: darkblue;
+}
+
+.button:focus{
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.5);
+}
+
+
+
+/* stylin for the todo-array */
+
+.container{
+  margin-top: 70px;
+}
+
+/* General styling for the todo list */
+.todo-list {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styling for each todo item */
+.todo-item {
+  margin-top: 15px; /*Space between items*/
+  display: flex; /* Align items horizontally */
+  justify-content: space-between; /* Space between text and button */
+  align-items: center; /* Center vertically */
+  background-color: #333; /* Dark background */
+  padding: 10px 5px; /* Space inside the item */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Text inside the todo item */
+.todo-text {
+  color: white; /* White text */
+}
+
+/* Button to delete the todo */
+.delete-button {
+  background-color: #ef4444; /* Red background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 0.25rem 1rem; /* Space inside the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size for text */
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center icon vertically */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition */
+}
+
+.delete-button:hover {
+  background-color: #dc2626; /* Darker red on hover */
+}
+
+/* Styling for the SVG icon */
+.icon {
+  width: 1.5rem; /* Icon size */
+  height: 1.5rem; /* Icon size */
+}
