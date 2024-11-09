@@ -23,8 +23,10 @@ function AddTodo() {
     }
 
     return (
+        <>
+        <div className="contain">
+        <div className='top-heading'>This is a React Redux App</div>
         <form onSubmit={addTodoHandler} className='form'>
-
             {/* this is the input field where the user will enter the todo */}
             <input type="text"
             placeholder='Add Todo'
@@ -35,6 +37,8 @@ function AddTodo() {
             {/* this is the button that will be used to add the todo */}
             <button type='submit' className='button'>Add Todo</button>
         </form>
+        </div>
+        </>
     );
 }
 

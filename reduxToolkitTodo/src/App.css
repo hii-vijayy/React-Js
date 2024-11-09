@@ -4,12 +4,20 @@ body{
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   margin: 0;
 }
 
 /* styling for the todo form */
+.contain{
+  margin-top: 25% ;
+}
+
+.top-heading{
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .form{
   display: flex;
   justify-content: space-between;

@@ -17,22 +17,22 @@ function Todos() {
         <>
         <div className="container">
         <div className='todo-list'>
-            // this will map through all the todos and display them
+             {/* this will map through all the todos and display them */}
             {AllTodo.map((allTodo)=>(
                 // this will display the todo and a delete button
                 <li key={allTodo.id} className='todo-item'>
-                    // this will display the text of the todo
+                    {/*this will display the text of the todo */}
                     <div className='todo-text'>{allTodo.text}</div>
-                    // this will display the delete button
+                     {/* this will display the delete button */}
                     <button onClick={()=>dispatch(removeTodo(allTodo.id))} className='delete-button'>
-                        // this is the svg icon for the delete button
+                         {/* this is the svg icon for the delete button */}
                         <svg xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             strokeWidth={1.5}
                             stroke="currentColor"
                             className="icon">
-                                // this is the path of the svg icon
+                                 {/* this is the path of the svg icon */}
                             <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
